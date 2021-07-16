@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/fontawesome.css" />
+    <title>shopping cart</title>
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <header>
+      <nav>
+        <div class="container">
+          <div class="nav-menu">
+            <div class="menu-btn">
+              <span class="line"></span><span class="line"></span
+              ><span class="line"></span>
+            </div>
+            <div class="brand"><i class="fas fa-shopping-bag"></i> proshop</div>
+            <div class="shopping-cart cart-toggle">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="items-in__cart">0</span>
+            </div>
+          </div>
+          <ul class="nav-center">
+            <li>Products</li>
+            <li>Latest</li>
+            <li>Accounts</li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section id="products">
+      <div class="container product-container">
+        <h3>make your selections</h3>
+        <div class="search-box">
+          <span class="search-icon"><i class="fas fa-search"></i></span>
+          <input
+            type="text"
+            class="input filter-categories"
+            placeholder="search here"
+          />
+        </div>
+
+        <div class="filter-btns__container">
+          <!--
+          <button class="active" data-id="all">All</button
+          ><button data-id="shoes">Shoes</button
+          ><button data-id="shirts">Shirts</button
+          ><button data-id="">Bag</button>
+          -->
+        </div>
+        <div class="products-wrapper">
+          <!---
+          <div class="product">
+            <div class="product-img">
+              <img src="assets/p2.png" alt="" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Shoes</h3>
+              <button class="cart-btn">add to cart <i class="fas fa-cart"></i></button>
+              <h3 class="product-price">6$</h3>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="product-img">
+              <img src="assets/p2.png" alt="" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Shoes</h3>
+              <button class="cart-btn">Buy now</button>
+              <h3 class="product-price">6$</h3>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="product-img">
+              <img src="assets/p2.png" alt="" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Shoes</h3>
+              <button class="cart-btn">Buy now</button>
+              <h3 class="product-price">6$</h3>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="product-img">
+              <img src="assets/p2.png" alt="" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Shoes</h3>
+              <button class="cart-btn">Buy now</button>
+              <h3 class="product-price">6$</h3>
+            </div>
+          </div>
+        --></div>
+      </div>
+    </section>
+    <div class="main-cart">
+      <span class="close-cart"><i class="fas fa-times"></i></span>
+      <h3>cart</h3>
+      <div class="container">
+        <!-- <div class="cart-headings">
+          <h1>Item</h1>
+          <h1>Quantity</h1>
+        </div> -->
+        <div class="cart-items__container">
+          <h1></h1>
+          <!-- <div class="cart-row">
+            <div class="item label">
+              <div class="item-img">
+                <img src="assets/p2.png" alt="" />
+              </div>
+              <div class="item-info">
+                <span class="name">shoes</span>
+              </div>
+            </div>
+            <div class="quantity label">
+              <input type="number" class="input-quantity" />
+            </div>
+
+            <div class="price-label label">
+              <span class="cart-item-price">6$</span>
+            </div>
+
+            <button class="remove-item" class="label">
+              remove <i class="fas fa-trash"></i>
+            </button>
+          </div>
+          <div class="cart-row">
+            <div class="item label">
+              <div class="item-img">
+                <img src="assets/p2.png" alt="" />
+              </div>
+              <div class="item-info">
+                <span class="name">shoes</span>
+              </div>
+            </div>
+            <div class="quantity label">
+              <input type="number" class="input-quantity" />
+            </div>
+
+            <div class="price-label label">
+              <span class="cart-item-price">6$</span>
+            </div>
+
+            <button class="remove-item" class="label">
+              remove <i class="fas fa-trash"></i>
+            </button>
+          </div>
+
+          <div class="cart-row">
+            <div class="item label">
+              <div class="item-img">
+                <img src="assets/p2.png" alt="" />
+              </div>
+              <div class="item-info">
+                <span class="name">shoes</span>
+              </div>
+            </div>
+            <div class="quantity label">
+              <input type="number" class="input-quantity" />
+            </div>
+
+            <div class="price-label label">
+              <span class="cart-item-price">6$</span>
+            </div>
+
+            <button class="remove-item" class="label">
+              remove <i class="fas fa-trash"></i>
+            </button>
+          </div> -->
+        </div>
+        <div class="cart-footer">
+          <div>
+            <h3 class="total">Totals : <span class="total-label">0</span></h3>
+          </div>
+          <button class="checkout-btn">checkout</button>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
