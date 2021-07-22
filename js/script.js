@@ -116,7 +116,7 @@ function loadProductDom(items) {
     <div class="product">
     <div class="product-img">
       <img src="${product.imgurl}" alt="" />
-      <span class="cart-btn"><i class="fas fa-shopping-cart"></i></span>
+      <span class="cart-btn"> <i class="bx bx-cart"></i></span>
     </div>
     <div class="product-info">
       <h3 class="product-title">${product.productname}</h3>
