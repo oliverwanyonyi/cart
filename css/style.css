@@ -160,6 +160,7 @@ section {
 }
 .product:hover img {
   transform: scale(1.2);
+  filter: blur(3px);
 }
 .product .product-info {
   padding: 1rem 0.5rem;
@@ -175,21 +176,20 @@ section {
   right: 1rem;
   bottom: -4rem;
   transition: 1s ease-in-out;
-}
-.product:hover .cart-btn {
-  bottom: 1rem;
-}
-.product .cart-btn {
-  width: 3rem;
-  height: 3rem;
+  width: 85%;
+  padding: 0.2rem;
   line-height: 3rem;
   text-align: center;
   background: #fc3f3f;
-  border-radius: 50%;
+  border-radius: 1rem;
   color: #ffffff;
   font-size: 1rem;
   cursor: pointer;
 }
+.product:hover .cart-btn {
+  bottom: 1rem;
+}
+
 .product .product-info button:focus {
   background: linear-gradient(-123deg, #fa3949, #dfaff1);
 }

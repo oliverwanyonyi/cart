@@ -93,7 +93,7 @@ const products = [
     imgurl: "assets/p6.jpg",
   },
 ];
-window.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
   loadProductDom(products);
   displayMenuButtons();
 
@@ -116,7 +116,7 @@ function loadProductDom(items) {
     <div class="product">
     <div class="product-img">
       <img src="${product.imgurl}" alt="" />
-      <span class="cart-btn"> <i class="bx bx-cart"></i></span>
+      <span class="cart-btn">Add to Cart</span>
     </div>
     <div class="product-info">
       <h3 class="product-title">${product.productname}</h3>
@@ -189,19 +189,15 @@ filterInput.addEventListener("change", function () {
 });
 
 function addItemsToCart(e) {
-  console.log(
-    e.target.parentElement.previousElementSibling.parentElement
-      .nextElementSibling.firstElementChild.nextElementSibling
-  );
-  if (e.target.parentElement.classList.contains("cart-btn")) {
+  if (e.target.classList.contains("cart-btn")) {
     const item = {};
     // const name =
     item.name =
-      e.target.parentElement.previousElementSibling.parentElement.nextElementSibling.firstElementChild.innerText;
+      e.target.previousElementSibling.parentElement.nextElementSibling.firstElementChild.innerText;
 
     item.price =
-      e.target.parentElement.previousElementSibling.parentElement.nextElementSibling.firstElementChild.nextElementSibling.innerText;
-    const partialPath = e.target.parentElement.previousElementSibling.src;
+      e.target.previousElementSibling.parentElement.nextElementSibling.firstElementChild.nextElementSibling.innerText;
+    const partialPath = e.target.previousElementSibling.src;
 
     let position = partialPath.indexOf("assets") + 6;
     let fullPath = partialPath.slice(position);
@@ -279,6 +275,7 @@ function quantityChanged(event) {
   }
   updateCartTotal();
 }
+
 const cartitemsContainer = document.querySelector(".cart-items__container");
 function updateCartTotal() {
   const cartRowsContainer = document.querySelector(".cart-items__container");
